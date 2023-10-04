@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Memory</title>
+</head>
+
+<body class="w3-light-grey">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-yellow w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <!--
+      <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+      <a href="chapter2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chapter 2</a>
+      <a href="chapter3.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chapter 3</a>
+      <a href="chapter4.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chapter 4</a>
+      <a href="chapter5.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chapter 5</a>
+      -->
+        </div>
+
+        <!-- Navbar on small screens 
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="chapter2.html" class="w3-bar-item w3-button w3-padding-large">Chp 2</a>
+      <a href="chapter3.html" class="w3-bar-item w3-button w3-padding-large">Chp 3</a>
+      <a href="chapter4.html" class="w3-bar-item w3-button w3-padding-large">Chp 4</a>
+      <a href="chapter5.html" class="w3-bar-item w3-button w3-padding-large">Chp 5</a>
+      
+    </div>
+    -->
+    </div>
+
+    <header class="w3-container w3-black w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo glow">Luke</h1>
+        <H1>Chapter 3</H1><br>
+        <p class="glow2">Lets Sharpen That Memory! Again</p>
+        <p class="glow2">Generations</p>
+
+
+    </header>
+
+
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+
+        <p class="w3-justify w3-mobile" style="font-size: 1.3em;"><span class="w3-opacity"
+                style="font-size: small;">23</span> And Jesus himself began to be about thirty years of age, being (as
+            was supposed) the son of Joseph,
+            which was the son of <span class="w3-text-light-grey" id="text" onclick="toggleTextColor()">Heli</span>,
+            <span class="w3-opacity" style="font-size: small;">24</span>Which was the son of Matthat, which was the son of Levi, which was the son of 
+            <span class="w3-text-light-grey" id="text2" onclick="toggleTextColor2()">Melchi</span>, which was the son of Janna, which was the son of Joseph,
+            <span class="w3-opacity" style="font-size: small;">25</span>Which was the son of Mattathias, which was the son of Amos, which was the son of Naum, 
+            which was the son of <span class="w3-text-light-grey" id="text3" onclick="toggleTextColor3()">Esli</span>, which was the son of Nagge,
+            . <span class="w3-opacity"
+                style="font-size: small;">26</span>Which was the son of Maath, which was the son of 
+                <span class="w3-text-light-grey" id="text4" onclick="toggleTextColor4()">Mattathias</span>, which was the son of Semei, which was the son of 
+                Joseph, which was the son of Juda,
+            
+             <span class="w3-opacity" style="font-size: small;">27</span>Which was the son of Joanna, which was the son of Rhesa, 
+            which was the son of Zorobabel, which was the son of <span class="w3-text-light-grey" id="text5" onclick="toggleTextColor5()">Salathiel</span>, which was the son of Neri,
+            
+
+
+             <span class="w3-opacity" style="font-size: small;">28</span>Which was the son of Melchi, which was the son of Addi, which was the son of Cosam, 
+            which was the son of <span class="w3-text-light-grey" id="text6" onclick="toggleTextColor6()">Elmodam</span>, which was the son of Er,
+            
+             <span class="w3-opacity" style="font-size: small;">29</span>Which was the son of <span class="w3-text-light-grey" id="text7" onclick="toggleTextColor7()">Jose</span>, 
+            which was the son of Eliezer, which was the son of Jorim, 
+            which was the son of Matthat, which was the son of Levi,
+             <span class="w3-opacity"
+                style="font-size: small;">30</span> Which was the son of Simeon, which was the son of Juda, which was the son of Joseph, which was the son of Jonan, 
+                which was the son of <span class="w3-text-light-grey" id="text8"
+                onclick="toggleTextColor8()">Eliakim</span>,  <span class="w3-opacity" style="font-size: small;">31</span> Which was the son of Melea, 
+                which was the son of Menan, which was the son of Mattatha, which was the son of <span
+                class="w3-text-light-grey" id="text9" onclick="toggleTextColor9()">Nathan</span>, which was the son of David,
+                 <span class="w3-opacity" style="font-size: small;">32</span> Which was the son of Jesse, which was the son of Obed, which was the son of Booz, 
+                which was the son of Salmon, which was the son of <span class="w3-text-light-grey"
+                id="text10" onclick="toggleTextColor10()">Naasson</span>,
+                 <span class="w3-opacity" style="font-size: small;">33</span>Which was the son of Aminadab, which was the son of Aram, which was the son of Esrom, 
+                which was the son of <span class="w3-text-light-grey" id="text11" onclick="toggleTextColor11()">Phares</span>, which was the son of Juda,
+
+                
+                 <span class="w3-opacity" style="font-size: small;">34</span> Which was the son of Jacob, which was the son of 
+                Isaac, which was the son of Abraham, 
+                which was the son of <span class="w3-text-light-grey" id="text12" onclick="toggleTextColor12()">Thara</span>, which was the son of Nachor,
+                
+
+                 <span class="w3-opacity" style="font-size: small;">35</span> Which was the son of Saruch, which was the son of Ragau, which was the son of Phalec, 
+                which was the son of <span class="w3-text-light-grey" id="text16" onclick="toggleTextColor16()">Heber</span>, which was the son of Sala,
+                
+                
+                
+                
+                <span class="w3-opacity" style="font-size: small;">36</span> Which was the son of Cainan, which was the son of 
+                <span class="w3-text-light-grey" id="text13" onclick="toggleTextColor13()">Arphaxad</span>, which was the son of Sem, 
+                which was the son of Noe, which was the son of Lamech,
+                 <span class="w3-opacity" style="font-size: small;">37</span> Which was the son of Mathusala, which was the son of Enoch, which was the son of Jared, 
+                    which was the son of <span class="w3-text-light-grey" id="text14" onclick="toggleTextColor14()">Maleleel</span>, which was the son of Cainan,
+                 <span class="w3-opacity" style="font-size: small;">38</span> Which was the son of 
+                    <span class="w3-text-light-grey" id="text15" onclick="toggleTextColor15()">Enos</span>, which was the son of Seth, which was the son of Adam, 
+                    which was the son of God.
+                
+
+        </p>
+    </div>
+    <!--
+    <div class="w3-container w3-black w3-center w3-padding-64">
+        <h1 class="w3-margin w3-xlarge w3-center">IN THE BEGINNING WAS THE WORD</h1>
+        <p>Take The Quiz To Get To Next Chapter<a href="" target="_blank"></a></p>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-yellow">POP
+            QUIZ</button>
+    </div>
+    -->
+
+    <!-- Modal body -->
+
+    <!-- Modal 1-->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-indigo">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2 class="w3-center">STUDY TO SHOW THYSELF APPROVED</h2>
+            </header>
+            <div class="w3-container">
+                <p class="w3-center">What is the first word of this Epistle? </p>
+
+            </div>
+            <footer class="w3-container w3-center w3-indigo">
+                <button onclick="myfunction2()" class="w3-button w3-teal">Greetings</button>
+                <button onclick="myfunction2()" class="w3-button w3-teal">The</button>
+                <button onclick="document.getElementById('id02').style.display='block'"
+                    class="w3-button w3-teal">James</button>
+                <button onclick="myfunction2()" class="w3-button w3-teal">This</button>
+
+            </footer>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-indigo">
+                <span onclick="document.getElementById('id02').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2 class="w3-center">STUDY TO SHOW THYSELF APPROVED</h2>
+            </header>
+            <div class="w3-container">
+                <p class="w3-center">A hearer of the Word should also be a ______ of the Word.</p>
+
+            </div>
+            <footer class="w3-container w3-center w3-indigo">
+                <button onclick="myfunction2()" class="w3-button w3-teal">listener</button>
+                <button onclick="myfunction2()" class="w3-button w3-teal">writer</button>
+                <button onclick="myfunction1()" .style.display='block' class="w3-button w3-teal">doer</button>
+                <button onclick="myfunction2()" class="w3-button w3-teal">counter</button>
+
+            </footer>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function myfunction1() {
+            document.getElementById('id01').style.display = 'none'
+            alert("You are correct. You can move on to the next chapter!!!")
+            window.location.href = "chapter2.html"
+        }
+
+        function myfunction2() {
+            alert("BUMMER....Go Back And Read")
+            document.getElementById('id01').style.display = 'none'
+            document.getElementById('id02').style.display = 'none'
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
